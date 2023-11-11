@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.bugstack</groupId>
-    <artifactId>xfg-frame-archetype-std</artifactId>
+    <groupId>cn.sonata</groupId>
+    <artifactId>sonata-frame-archetype-std</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>xfg-frame-archetype-std-app</module>
-        <module>xfg-frame-archetype-std-domain</module>
-        <module>xfg-frame-archetype-std-trigger</module>
-        <module>xfg-frame-archetype-std-infrastructure</module>
-        <module>xfg-frame-archetype-std-types</module>
-        <module>xfg-frame-archetype-std-api</module>
+        <module>sonata-frame-archetype-std-app</module>
+        <module>sonata-frame-archetype-std-domain</module>
+        <module>sonata-frame-archetype-std-trigger</module>
+        <module>sonata-frame-archetype-std-infrastructure</module>
+        <module>sonata-frame-archetype-std-types</module>
+        <module>sonata-frame-archetype-std-api</module>
     </modules>
 
     <properties>
@@ -26,10 +26,10 @@
 
     <developers>
         <developer>
-            <name>xiaofuge</name>
-            <email>184172133@qq.com</email>
-            <organization>fuzhengwei</organization>
-            <organizationUrl>https://github.com/fuzhengwei</organizationUrl>
+            <name>sonata</name>
+            <email>lfh757362813@gmail.com</email>
+            <organization>jackson</organization>
+            <organizationUrl>https://github.com/zeroXm</organizationUrl>
         </developer>
     </developers>
 
@@ -149,28 +149,28 @@
 
             <!-- 工程模块 -->
             <dependency>
-                <groupId>cn.bugstack</groupId>
-                <artifactId>xfg-frame-archetype-std-domain</artifactId>
+                <groupId>cn.sonata</groupId>
+                <artifactId>sonata-frame-archetype-std-domain</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>cn.bugstack</groupId>
-                <artifactId>xfg-frame-archetype-std-infrastructure</artifactId>
+                <groupId>cn.sonata</groupId>
+                <artifactId>sonata-frame-archetype-std-infrastructure</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>cn.bugstack</groupId>
-                <artifactId>xfg-frame-archetype-std-types</artifactId>
+                <groupId>cn.sonata</groupId>
+                <artifactId>sonata-frame-archetype-std-types</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>cn.bugstack</groupId>
-                <artifactId>xfg-frame-archetype-std-trigger</artifactId>
+                <groupId>cn.sonata</groupId>
+                <artifactId>sonata-frame-archetype-std-trigger</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>cn.bugstack</groupId>
-                <artifactId>xfg-frame-archetype-std-api</artifactId>
+                <groupId>cn.sonata</groupId>
+                <artifactId>sonata-frame-archetype-std-api</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
@@ -216,21 +216,21 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-std-boot -Xloggc:/export/Logs/xfg-frame-archetype-std-boot/gc-xfg-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+                <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/sonata-frame-archetype-std-boot -Xloggc:/export/Logs/sonata-frame-archetype-std-boot/gc-sonata-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
                 <profileActive>dev</profileActive>
             </properties>
         </profile>
         <profile>
             <id>test</id>
             <properties>
-                <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/xfg-frame-archetype-std-boot -Xloggc:/export/Logs/xfg-frame-archetype-std-boot/gc-xfg-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+                <java_jvm>-Xms1G -Xmx1G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=test -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/sonata-frame-archetype-std-boot -Xloggc:/export/Logs/sonata-frame-archetype-std-boot/gc-sonata-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
                 <profileActive>test</profileActive>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
-                <java_jvm>-Xms6G -Xmx6G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=release -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/fq-mall-activity-app -Xloggc:/export/Logs/xfg-frame-archetype-std-boot/gc-xfg-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
+                <java_jvm>-Xms6G -Xmx6G -server  -XX:MaxPermSize=256M -Xss256K -Dspring.profiles.active=release -XX:+DisableExplicitGC -XX:+UseG1GC  -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/export/Logs/fq-mall-activity-app -Xloggc:/export/Logs/sonata-frame-archetype-std-boot/gc-sonata-frame-archetype-std-boot.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps</java_jvm>
                 <profileActive>prod</profileActive>
             </properties>
         </profile>
