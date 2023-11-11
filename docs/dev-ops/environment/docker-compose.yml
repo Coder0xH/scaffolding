@@ -69,7 +69,7 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_USER: xfg
+      MYSQL_USER: sonata
       MYSQL_PASSWORD: 123456
     networks:
       - my-network
@@ -90,8 +90,8 @@ services:
         limits:
           cpus: '1.00'
           memory: 512M
-    volumes_from:
-      - mysql-job-dbdata
+#    volumes_from:
+#      - mysql-job-dbdata
 
   # 自动加载数据
   mysql-job-dbdata:
