@@ -1,6 +1,6 @@
-# DDD 脚手架
+# DDD
 
-## Maven - 阿里云镜像
+## Maven
 
 ```java
   <!-- mirrors
